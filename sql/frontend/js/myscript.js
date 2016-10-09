@@ -7,7 +7,8 @@ var pollflag = true;
 function refresh(){
 	$.ajax({
 		type: 'GET' ,
-		url: 'http://test.tinnytian.com:8081/result',
+		// url: 'http://test.tinnytian.com:8081/result',
+		url: 'http://localhost:8080/result',
 		dataType: 'json',
 		success: function(response){
 			update(response);
